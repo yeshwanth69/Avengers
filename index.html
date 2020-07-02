@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta charset="utf-8">
+	<title>THE AVENGERS</title>
+	<style>
+
+		   body{
+		   	    font-family: tahoma;
+		   	    font-size: 16px;
+		   	    line-height: 1;
+		   	    margin: 0;
+		   	    padding: 0;
+		   }
+
+  			#timeline{
+  				display: flex;
+  				background-color:black;
+  			}
+
+
+  			#timeline:hover .item{
+  				width: 30;
+  			}
+            
+            .item{
+            	   transform: translate3d(0,0,0);
+            	   position: relative;
+            	   width: 20%;
+            	   height: 100vh;
+            	   min-height: 600px;
+            	   color: white;
+            	   overflow:hidden;
+            	   transition: width 0.4s ease;
+
+            }
+
+            .item:before, .item:after{
+            	transform: translate3d(0,0,0);
+            	content: '';
+            	position: absolute;
+            	left: 0;
+            	top: 0;
+            	width:0%;
+            	height: 0%;
+            }
+
+            .item:after{
+            	background: rgba(21,126,209,0.85);
+            	opacity: 10;
+            	transition: opacity 0.4s ease;
+            }
+
+            .item:before{
+            	background: linear-gradient(to bottom, rgba(0,0,0,0)0%,
+            	rgba(0,0,0,1)75%);
+            	z-index: 1;
+            	opacity: 1;
+            	transform: translate3d(0,0,0) translateY(50%);
+            	transition: opacity 0.5s ease, transform 0.5s ease;
+            }
+
+            .item:hover{
+            	width: 30% !important;
+            }
+
+            .item:hover .content{
+            	opacity: 1;
+            	transform: translateY(0);
+            	transition: all 0.75S ease 0.5s;
+            }
+            .item:hover  .bg{
+            	filter:  grayscale(0);
+            }
+            .content{
+            	transform: translate3d(0,0,0) translateY(25px);
+            	position: relative;
+            	z-index: 1;
+            	text-align: center;
+            	margin: 0 1em;
+            	top:55%;
+            	opacity: 0;
+            }	
+
+            .content h1{
+            	font-family: tahoma;
+            	text-transform: uppercase;
+            	color: white;
+            	font-size: 1.8rem;
+            	font-weight: normal;
+            }
+
+            .year{
+            	position: absolute;
+            	top:50%;
+            	left:50%;
+            	transform: translateX(-50%) translateY(-50%);
+            	border-top: 3px solid red;
+            	border-bottom: 5px solid red;
+            }
+            .year p{
+            	font-family: tahoma;
+            	font-size: 1.5rem;
+            	line-height: 0;
+            }
+
+            .bg{
+            	transform: translate3d(0,0,0);
+            	position: absolute;
+            	width: 100%;
+            	height: 100%;
+            	top:0;
+            	left:0;
+            	background-size: cover;
+            	background-position: center center;
+            	transition: filter 0.5s ease;
+            	filter: grayscale(100%);
+            }
+            p{
+            	font-family: tahoma;
+            	font-weight: normal;
+            }
+
+    </style>
+</head>
+<body>
+
+	<section id="timeline">
+		<div class="item">
+			<div class="bg" style="background-image: url(ironman.jfif);"></div>
+				<div class="year">
+					<p><i>iRON MAN</i></p>
+				</div>
+				<div class="content">
+					 <h1>Tony Stark</h1>
+					 <p>
+					 	 iron man is a ultimate sacrifices. he sacrifised his life to save the world and more over he is a Genius, billionaire, playboy, philanthropist.
+					     and his aim is to protect innocent people and build
+					     superhero weapons to maintain world peace and save the earth from aliens.!and iron man
+                         role is played by Robert Downey jr... 
+					</p>
+				</div>
+			</div>
+	
+
+        <div class="item">
+			<div class="bg" style="background-image:url(loki2.jpg); "></div>
+				<div class="year">
+					<p><i>~loki~</i></p>
+				</div>
+				<div class="content">
+					 <h1>God of mischief</h1>
+					 <p>
+                        loki is son of odin and brother of thor. he can perform all kinds of magic and also 
+                        he dangerous villain but sometimes he is on goodside. we can also call him as the god 
+                        of death because he died several times and comeback like bounceing ball.!and most
+                        importantly he can transform himself into a snak.but he hates the turth that he was a frost gaiant and loki real name is Tom Hiddleston.!
+					 	
+					</p>
+				</div>
+			</div>
+
+
+        <div class="item">
+			<div class="bg" style="background-image:url(thanos.png); "></div>
+				<div class="year">
+					<p><i>Th@nos</i></p>
+				</div>
+				<div class="content">
+					 <h1>Mad Titan</h1>
+					 <p>
+                        this stupid want erase half of the life force and he calls it as balance to the universe.
+					 	Thanos is the most powerful of all the Eternals of Titan. He is a superhuman Titan mutant born with the ability to synthesise cosmic energy for his own use and has increased his power by bionic amplification, and mystical enhancement by Death herself after she resurrected him.
+					</p>
+				</div>
+			</div>
+                <div class="item">
+			<div class="bg" style="background-image:url(hulk.jfif); "></div>
+				<div class="year">
+					<p><i>_HULK_</i></p>
+				</div>
+				<div class="content">
+					 <h1> Gamma Bomb</h1>
+					 <p>
+					 	When Bruce Banner changes into the Hulk, he becomes an unstoppable beast of near unlimited strength, power, and destruction. The Hulk's strength is probably the greatest in the Marvel universe, with many foes falling to his thunderous attacks.but this small green guy cant beat thanos and he crys like a baby when he see him.
+					</p>
+				</div>
+			</div>
+  
+        <div class="item">
+			<div class="bg" style="background-image:url(cap.jfif);"></div>
+				<div class="year">
+					<p><i>Captain </i></p>
+				</div>
+				<div class="content">
+					 <h1>He is Worthy</h1>
+					 <p>
+					 	Captain America is the alter ego of Steve Rogers, a frail young man enhanced to the peak of human perfection by an experimental serum to aid the United States government's efforts in World War II. Near the end of the war, he was trapped in ice and survived in suspended animation until he was revived in modern times. 
+					</p>
+				</div>
+			</div>
+    </section>
+</body>
+</html>
